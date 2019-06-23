@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-获取页面任意文字</title>
+  <style>
+    p {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <p id="test" onmousemove="">，就中英贸易、香港修例阐述中方立场
+    别让美国重回大萧条！美协会：对华激进贸易战将受历史严判
+    中办国办：坚决把受过刑事处罚等问题的人清出村干部队伍
+    四川珙县5.4级地震已造成珙县、长宁县31人受伤</p>
+  <script>
+    let test = document.getElementById('test');
+    test.onmouseup = function () {
+      // var range = window.getSelection().getRangeAt(0);
+      // range.selectNode(document.getElementById("test"));
+      // window.getSelection().addRange(range);
+      // console.log(window.getSelection().addRange(range))
+      console.log(window.getSelection().toString())
+    }
+    function doCopy() {
+      let selectedContent = window.getSelection().toString();
+    }
+    // test.onmousemove = function () {
+    //   if (document.Selection) {
+    //     //ie浏览器
+    //     alert(document.selection.createRange().text)
+    //   } else {
+    //     //标准浏览器
+    //     alert(window.getSelection().toString());
+    //   }
+    // }
+
+  </script>
+</body>
+</html>
