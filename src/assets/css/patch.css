@@ -191,6 +191,9 @@
 .cl-2 {
   color: rgb(51, 51, 51)!important;
 }
+.c-red {
+  color: #f05555;
+}
 /* 变形-位移 */
 .transform-x {
   transform: translate(0, 0)!important;

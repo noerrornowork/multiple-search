@@ -1,5 +1,5 @@
 <template>
-  <div class="multiple-search-01">
+  <div class="multiple-search-02">
     <div class="top m-t-50">
       <span class="top-text co-fl">多语检索</span>
       <button type="primary" class="top-btn co-fr">返回写作</button>
@@ -15,24 +15,24 @@
           <a type="primary"><i class="el-icon-delete">下载</i></a>
         </div>
         <div class="h-40 co-flex" style="flex: 1">
-          <div class="seek-left" style="flex: 1">
+          <div class="sort-left" style="flex: 1">
             <span class="p-l-30">中文文献</span>
             <span>英文文献</span>&nbsp;&nbsp;&nbsp;&nbsp;
             <a type="primary"><i class="el-icon-delete"></i>列表</a>
             <a type="primary"><i class="el-icon-delete"></i>摘要</a>
           </div>
-          <p class="seek-right w-150 h-20 p-t-20">
+          <p class="sort-right w-150 h-20 p-t-20">
             <span>每页显示:</span>
             <span>10</span>
-            <span>20</span>
+            <span class="c-red">20</span>
             <span>50</span>
           </p>
         </div>
       </div>
       <div class="result-box h-40 bdb-1  co-flex co-ac">
         <div class="seek-left co-flex co-ac " style="flex: 1">
-          <span class="m-l-20">已选文献:</span>
-          <span class="p-lr-10">0</span>
+          <span class="m-l-20"><b>已选文献:</b></span>
+          <span class="p-lr-10"><b>0</b></span>
           <span class="p-lr-10">清除</span>
           <div class="m-l-20 co-flex">
             <a class="" type="primary"><i class="el-icon-download"></i>批量下载</a>
@@ -72,7 +72,8 @@
         </el-table-column>
         <el-table-column
           prop="source"
-          label="来源">
+          label="来源"
+          width="120">
         </el-table-column>
         <el-table-column
           prop="publishTime"
@@ -113,7 +114,7 @@
 <script>
   import SearchWrapper from '@/base/SearchBox'
   export default {
-    name: 'multiple-search-01',
+    name: 'multiple-search-02',
     components: {
       SearchWrapper
     },
@@ -163,7 +164,7 @@
   }
 </script>
 <style lang="less" scoped>
-  .multiple-search-01 {
+  .multiple-search-02 {
     .top {
       padding: 0 20px;
       height: 50px;
@@ -192,6 +193,11 @@
             width: 120px;
             height: 20px;
             border: 1px solid #000;
+          }
+        }
+        .sort-right {
+          span:hover {
+            color: #f05555;
           }
         }
       }
