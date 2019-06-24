@@ -27,8 +27,14 @@
 .w-120 {
   width: 120px!important;
 }
+.w-140 {
+  width: 140px!important;
+}
 .w-150 {
   width: 150px!important;
+}
+.w-160 {
+  width: 160px!important;
 }
 .w-170 {
   width: 170px!important;
@@ -65,6 +71,10 @@
   height: 40px!important;
   line-height: 40px!important;
 }
+.h-36 {
+  height: 36px!important;
+  line-height: 36px!important;
+}
 .h-30 {
   height: 30px!important;
   line-height: 30px!important;
@@ -80,16 +90,6 @@
 
 .min-h-375 {
   min-height: 375px!important;
-}
-/* 背景色 */
-.bgc-fff {
-  background-color: #fff!important;
-}
-.bgc-102 {
-  background-color: rgb(102, 102, 102)!important;
-}
-.bgc-cfcfcf {
-  background-color: #cfcfcf!important;
 }
 /* 外边距 */
 .m-l-10 {
@@ -193,6 +193,28 @@
 }
 .c-red {
   color: #f05555;
+}
+.c-489BFB {
+  color: #489BFB;
+}
+.c-40424D {
+  color: #40424D;
+}
+.c-fff {
+  color: #ffffff;
+}
+/* 背景色 */
+.bgc-fff {
+  background-color: #fff!important;
+}
+.bgc-102 {
+  background-color: rgb(102, 102, 102)!important;
+}
+.bgc-cfcfcf {
+  background-color: #cfcfcf!important;
+}
+.bgc-489BFB {
+  background-color: #489BFB;
 }
 /* 变形-位移 */
 .transform-x {

@@ -1,7 +1,7 @@
 <template>
   <div class="online-image">
     <div class="top m-t-50">
-      <span class="top-text co-fl">在线协作</span>
+      <span class="top-text co-fl">在线写作</span>
       <button type="primary" class="top-btn co-fr">多语检索</button>
     </div>
     <div class="form-box">

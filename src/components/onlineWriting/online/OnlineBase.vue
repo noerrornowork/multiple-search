@@ -1,7 +1,7 @@
 <template>
   <div class="online-base">
     <div class="top m-t-50">
-      <span class="top-text co-fl">在线协作</span>
+      <span class="top-text co-fl">在线写作</span>
       <button type="primary" class="top-btn co-fr">多语检索</button>
     </div>
     <div class="form-box">
@@ -11,7 +11,7 @@
           <el-row type="flex" justify="center">
             <el-col :span="12">
               <el-form-item label="标题">
-                <el-input v-model="form.name"></el-input>
+                <el-input v-model="form.name" style="width: 400px"></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="12">
@@ -20,7 +20,6 @@
               </el-form-item>
             </el-col>
           </el-row>
-
           <el-row>
             <el-col :span="24">
               <el-form-item label="摘要">
@@ -28,7 +27,7 @@
                   :rows="4"
                   type="textarea"
                   v-model="form.desc"
-                  style="min-width: 730px; width: 21.38rem; max-width: 730px"
+                  style="min-width: 730px; width: 21.38rem; max-width: 730px; resize: none"
                 ></el-input>
               </el-form-item>
             </el-col>
@@ -73,7 +72,7 @@
     <div class="editor-box">
       <div class="editor-top h-50">
         <p class="top-text t-c w100">文章详情</p>
-        <button type="primary" class="quote-btn w-120 h-30">引用展开</button>
+        <button type="primary" class="quote-btn w-140 h-36 c-489BFB bgc-fff">引用展开</button>
       </div>
       <div class="bgc-fff p-t-20 min-h-375">
         <p class="h-28 p-lr-10">编辑器工具栏</p>
@@ -82,8 +81,8 @@
         </div>
       </div>
       <div class="btn-group m-t-50 m-b-130 co-fr">
-        <a href="javascript:;" class="cur w-120 t-c h-40">提交</a>
-        <a href="javascript:;" class="w-120 t-c h-40">取消</a>
+        <a href="javascript:;" class="w-160 t-c h-40 bgc-489BFB c-fff">提交</a>
+        <a href="javascript:;" class="w-160 t-c h-40 bgc-fff c-40424D">取消</a>
       </div>
     </div>
   </div>
@@ -150,12 +149,10 @@ export default {
       .quote-btn {
         position: absolute;
         top: 50%;
-        margin-top: -15px;
+        margin-top: -18px;
         right: 20px;
-        font-size: 20px;
-        background-color: rgb(72, 183, 235);
-        color: #ffffff;
-        border-radius: 20px;
+        font-size: 14px;
+        border-radius: 10px;
       }
       .editor-top {
         position: relative;
@@ -170,18 +167,19 @@ export default {
     .btn-group {
       a {
         display: inline-block;
-        line-height: 40px;
-        border-radius: 8px;
-        color: rgb(72, 183, 235);
-        font-weight: normal;
-        &:hover {
-          background-color: rgb(72, 183, 235);
-          color: #fff;
-        }
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
       }
     }
-    .cur {
-      color: #fff;
+  }
+</style>
+<style lang="less">
+  .online-base {
+    .el-textarea {
+      textarea {
+        resize: none;
+      }
     }
   }
 </style>
